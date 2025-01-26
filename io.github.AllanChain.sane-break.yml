@@ -17,6 +17,8 @@ finish-args:
   - --socket=pulseaudio
   # Battery status monitor
   - --system-talk-name=org.freedesktop.UPower
+  # Idle status on GNOME
+  - --talk-name=org.gnome.Mutter.IdleMonitor
 modules:
   - name: layer-shell-qt
     buildsystem: cmake-ninja
