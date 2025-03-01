@@ -40,9 +40,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/AllanChain/sane-break.git
-        commit: 41f38d55c2439bcf8f04af46afa7e5eb2946d21b
+        commit: e461e9eb695ac17490b93874e1e0e2346d587076
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
           is-main-source: true
-        tag: v0.6.1
+        tag: v0.6.2
