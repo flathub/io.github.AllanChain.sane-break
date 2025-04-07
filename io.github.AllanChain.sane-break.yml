@@ -37,6 +37,7 @@ modules:
     buildsystem: cmake-ninja
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DLINUX_DIST=Flatpak
     sources:
       - type: git
         url: https://github.com/AllanChain/sane-break.git
