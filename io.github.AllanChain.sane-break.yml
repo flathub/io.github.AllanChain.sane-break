@@ -26,7 +26,7 @@ modules:
       - -DBUILD_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.3.5/layer-shell-qt-6.3.5.tar.xz 
+        url: https://download.kde.org/stable/plasma/6.3.5/layer-shell-qt-6.3.5.tar.xz
         sha256: 7062ca0e50dcce97dd11d8adf1b86d49f1c56423f2341dceb3ea40dc48206e25
   - name: sane-break
     buildsystem: cmake-ninja
@@ -36,9 +36,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/AllanChain/sane-break.git
-        commit: 25b230b1d28a135cc188aa0dd1400de6da156646
+        commit: d1fee641916f2614cc9fc9b831e3a5b7231608e7
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
           is-main-source: true
-        tag: v0.8.4
