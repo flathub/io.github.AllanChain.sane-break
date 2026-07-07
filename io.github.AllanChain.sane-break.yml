@@ -26,8 +26,8 @@ modules:
       - -DBUILD_TESTING=OFF
     sources:
       - type: archive
-        url: https://download.kde.org/stable/plasma/6.6.5/layer-shell-qt-6.6.5.tar.xz
-        sha256: e8c145545ac49d5325f16ff710b521deab6e5b9745fcc18ab431252224a8f982
+        url: https://download.kde.org/stable/plasma/6.7.2/layer-shell-qt-6.7.2.tar.xz
+        sha256: 392cd82742f109452f874d14f5d391a823c7b021bdc2446c0f474b3d1e77b129
         x-checker-data:
           type: anitya
           project-id: 8761
@@ -41,8 +41,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/AllanChain/sane-break.git
-        commit: 508ea862c4826188f4f924b8ceeba4a2868fce53
+        commit: 9541dc1ff4e067ea4fd4df21eefb2cd6394d958e
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
           is-main-source: true
+        tag: v0.10.2
