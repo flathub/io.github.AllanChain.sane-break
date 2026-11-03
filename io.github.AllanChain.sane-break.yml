@@ -23,6 +23,9 @@ finish-args:
   - --talk-name=org.kde.Solid.PowerManagement
   # Idle/display inhibitor detection (logind, system bus) for inhibitor-aware breaks
   - --system-talk-name=org.freedesktop.login1
+  # Pause media players during breaks (MPRIS2 players register per-instance names
+  # such as org.mpris.MediaPlayer2.vlc, so the wildcard is required)
+  - --talk-name=org.mpris.MediaPlayer2.*
 modules:
   - name: layer-shell-qt
     buildsystem: cmake-ninja
@@ -45,8 +48,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/AllanChain/sane-break.git
-        commit: 38547fe110cc9dba384978aead5ad527cd20a95e
-        tag: v0.10.6
+        commit: 7bb3548cadf70e93166c7ecda0e2e873315966d7
+        tag: v0.10.7
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
